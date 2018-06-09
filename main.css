@@ -1,0 +1,49 @@
+body {
+  background: #DDD;
+}
+
+.box {
+  background-color: #FFF;
+  font-size: 13px;
+  margin: 0 auto;
+  padding: 45px 20px 10px 20px;
+  position: relative;
+  width: 260px;
+}
+
+.ribbon {
+  background-color: #C00;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 20px;
+  height: 35px;
+  left: -20px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 340px;
+}
+
+.ribbon:before,
+.ribbon:after {
+  border: 20px solid #900;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  position: absolute;
+  top: 15px;
+  z-index: -1;
+}
+
+.ribbon:before {
+  border-left-color: transparent;
+  left: -20px;
+}
+
+.ribbon:after {
+  border-right-color: transparent;
+  right: -20px;
+}
